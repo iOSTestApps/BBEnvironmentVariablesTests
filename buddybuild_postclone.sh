@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ "$BUDDYBUILD_BRANCH" == "develop" ]]; then
-    if [[ "$SUPER_SECRET_ENV_VAR" != "thisismysecretforevelop" ]]; then
+    if [[ "$SUPER_SECRET_ENV_VAR" != "thisismysecretfordevelop" ]]; then
       echo "SUPER_SECRET_ENV_VAR had no value or was set to the wrong value for the develop branch"
       echo "Aborting build"
       exit 1
